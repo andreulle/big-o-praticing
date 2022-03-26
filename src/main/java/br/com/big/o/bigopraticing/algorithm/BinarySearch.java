@@ -11,6 +11,7 @@ public class BinarySearch {
         return this.binarySearching(startIndex, endIndex, targetNumber, inputData);
     }
 
+    // O(log n)
     private int binarySearching(int start, int end, int targetNumber, int[] inputData){
         int middleIndex = (int) Math.floor((start + end)/2);
         if(inputData[middleIndex] == targetNumber){
