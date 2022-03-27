@@ -6,12 +6,13 @@ import java.util.Arrays;
 
 @Component
 public class MergeSort {
+    // O(n log n) mergeSort + merge
     public int[] sort(int[] unordenedArrayInput) {
 
         return mergeSort(unordenedArrayInput);
     }
 
-    // O(n log n)
+    //O(log n)
     private int[] mergeSort(int[] inputArray){
         if(inputArray.length < 2){
             return inputArray;
@@ -24,6 +25,7 @@ public class MergeSort {
         return merge(mergeSort(arrayLeft), mergeSort(arrayRight));
     }
 
+    //O(n)
     private int[] merge(int[] arrayLeft, int[] arrayRight){
         int resultArraySize = arrayLeft.length + arrayRight.length;
         int[] resultArray = new int[resultArraySize];
