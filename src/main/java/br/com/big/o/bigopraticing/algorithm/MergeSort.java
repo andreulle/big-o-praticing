@@ -17,7 +17,7 @@ public class MergeSort {
             return inputArray;
         }
 
-        int middleIndex = (int) Math.floor(inputArray.length / 2);
+        int middleIndex = inputArray.length / 2;
         int[] arrayLeft = Arrays.copyOfRange(inputArray,0, middleIndex);
         int[] arrayRight = Arrays.copyOfRange(inputArray, middleIndex, inputArray.length);
 
